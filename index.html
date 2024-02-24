@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goat Code - Software House</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header>
+      <nav class="navbar">
+        <img
+          src="assets/logo-company.png"
+          alt="Logo Goat Code - Software House"
+        />
+        <div class="navbar-menu">
+          <a href="./">Home</a>
+          <a href="./profile.html">My Profile</a>
+          <a href="./portofolio.html">Portofolio</a>
+          <a href="./messages.html">Message Us</a>
+        </div>
+      </nav>
+    </header>
+    <!-- Main - Content -->
+    <main>
+      <!-- Section Hero -->
+      <section class="hero-container">
+        <div>
+          <div>
+            <h1>Hai <span id="nameUser"></span>, Selamat Datang</h1>
+            <p>
+              Goat Code adalah perusahaan software house di Indonesia yang fokus
+              pada pembuatan dan pengembangan website dan mobile apps yang
+              disesuaikan dengan kebutuhan serta implementasi sistem cloud.
+            </p>
+          </div>
+        </div>
+        <img src="assets/img-hero.svg" alt="Image Hero" />
+      </section>
+      <hr />
+      <!-- Section Headquarter -->
+      <section class="headquarter-container">
+        <h2>Our Headquarter</h2>
+
+        <div class="headquarter-gallery">
+          <div>
+            <img src="assets/city-bandung.jpg" alt="Bandung" />
+            <h3>Bandung</h3>
+          </div>
+          <div>
+            <img src="assets/city-jakarta.jpg" alt="Jakarta" />
+            <h3>Jakarta</h3>
+          </div>
+          <div>
+            <img src="assets/city-yogya.jpg" alt="Yogyakarta" />
+            <h3>Semarang</h3>
+          </div>
+          <div>
+            <img src="assets/city-surabaya.jpg" alt="Surabaya" />
+            <h3>Surabaya</h3>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <!-- Section Contact -->
+      <section id="contact" class="contact-container">
+        <h2>Message Us</h2>
+        <div class="contact-form">
+          <form name="message-form" onsubmit="return validateForm()">
+            <div class="input-type">
+              <label for="name">Nama</label>
+              <div class="colon">:</div>
+              <input
+                type="text"
+                id="name"
+                placeholder="Nama"
+                name="full-name"
+              />
+            </div>
+            <div class="input-type">
+              <label for="birth">Tanggal Lahir</label>
+              <div class="colon">:</div>
+              <input
+                type="date"
+                id="birth"
+                placeholder="Tanggal Lahir"
+                name="birth-date"
+              />
+            </div>
+            <div class="input-type">
+              <label>Jenis Kelamin</label>
+              <div class="colon">:</div>
+              <div class="input-radio">
+                <input
+                  type="radio"
+                  id="male"
+                  name="gender"
+                  value="Laki-Laki"
+                  checked
+                />
+                <label for="male">Laki-Laki</label>
+                <input
+                  type="radio"
+                  id="female"
+                  name="gender"
+                  value="Perempuan"
+                />
+                <label for="female">Perempuan</label>
+              </div>
+            </div>
+            <div class="input-type">
+              <label for="messages">Pesan</label>
+              <div class="colon">:</div>
+              <textarea
+                placeholder="Pesan"
+                id="messages"
+                name="messages-user"
+              ></textarea>
+            </div>
+            <div class="button-action">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+          <div class="form-output">
+            <p>Current time: <span id="current-time"></span></p>
+            <br />
+            <p>Nama: <span id="sender-full-name"></span></p>
+            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+            <p>Pesan: <span id="sender-messages"></span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <img
+        src="assets/logo-company.png"
+        alt="Logo Goat Code - Software House"
+      />
+      <p>© 2023 Goat Code | Developed 💖  Bagus Budi Satoto</p>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>
