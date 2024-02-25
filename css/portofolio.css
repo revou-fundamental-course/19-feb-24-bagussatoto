@@ -1,0 +1,232 @@
+/* root */
+:root{
+    --darkGray: #34364a;
+    --gray: #4a5568;
+}
+
+/* Header - Navigation */
+.navbar{
+    display: flex;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+    padding: 0 10%;
+    height: 70px;
+    width: 80%;
+    top: 0;
+    
+}
+
+.navbar > img{
+    height: 60px;
+}
+.navbar > .navbar-menu > a{
+    padding: 0px 30px 10px 30px;
+}
+
+.navbar-menu > a:link{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-menu > a:active{
+    color: black;
+}
+
+.navbar-menu > a:visited{
+    color: black;
+}
+
+.navbar-menu > a:hover{
+    color: gray;
+}
+
+/* Main - Content */
+main{
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* Section Header */
+header > h1{
+    padding-top: 50px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+    width: 100%;
+}
+
+hr{
+    width: 60%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    
+}
+
+/* Section Porto Design */
+.design-container{
+    height: auto;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.design-container h2{
+    color: var(--darkGray);
+    font-weight: 700;
+    font-size: 30px;
+    width: 360px;
+    margin: 30px 0;
+}
+
+.design-gallery{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0px 0px 0px 30px;
+    gap: 30px;
+}
+
+.design-gallery img {
+    height: 200px;
+}
+
+.design-gallery h3{
+    color: var(--gray);
+    font-weight:100;
+    font-size: 22px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Section Porto Mobile */
+.mobile-container{
+    height: auto;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-container h2{
+    color: var(--darkGray);
+    font-weight: 700;
+    font-size: 30px;
+    width: 360px;
+    margin: 30px 0;
+}
+
+.mobile-gallery{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0px 0px 0px 30px;
+    gap: 30px;
+}
+
+.mobile-gallery img {
+    height: 200px;
+}
+
+.mobile-gallery h3{
+    color: var(--gray);
+    font-weight:100;
+    font-size: 22px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Section Porto Web */
+.web-container{
+    height: auto;
+    margin: 40px 0;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.web-container h2{
+    color: var(--darkGray);
+    font-weight: 700;
+    font-size: 30px;
+    width: 360px;
+    margin: 30px 0;
+}
+
+.web-gallery{   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0px 0px 0px 30px;
+    gap: 30px;
+}
+
+.web-gallery img {
+    height: 200px;
+}
+
+.web-gallery h3{
+    color: var(--gray);
+    font-weight:100;
+    font-size: 22px;
+    margin: 30px 0;
+    text-align: center;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    height: 100px;
+    width: 80%;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer > img{
+    height: 60px;
+}
+
+/* Responsive */
+/* Smartphone */
+@media only screen and (max-width: 840px){
+    .navbar{
+        flex-direction:column;
+        height: 200px;
+        padding-bottom: 30px;
+    }
+
+    .navbar-menu{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        gap: 10px;
+    }
+
+    .navbar > .navbar-menu > a{
+        padding-bottom: 10px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    
+    main{
+        margin-top: 250px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 1200px){
+
+    footer{
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+}
